@@ -38,7 +38,7 @@ You can install this solution with a single command.
 Run the following command as the `root` user on your Debian 12 server:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/liuyue840/warp-google-routing/master/warp.txt)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/liuyue840/warp-google-routing/master/install.sh)"
 ```
 
 The script will perform all necessary steps automatically.
@@ -47,11 +47,15 @@ The script will perform all necessary steps automatically.
 
 1.  **Download the script:**
     ```bash
-    wget -O warp.txt https://raw.githubusercontent.com/liuyue840/warp-google-routing/master/warp.txt
+    wget https://raw.githubusercontent.com/liuyue840/warp-google-routing/master/install.sh
     ```
-2.  **Run the script:**
+2.  **Make it executable:**
     ```bash
-    bash warp.txt
+    chmod +x install.sh
+    ```
+3.  **Run the script:**
+    ```bash
+    ./install.sh
     ```
 
 The script will execute and configure your system.
@@ -141,4 +145,4 @@ You can verify that the routing is working correctly with the following tests.
 
 ## License
 
-This project is open-source and available for free use.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
